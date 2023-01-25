@@ -122,7 +122,7 @@ control MyIngress(inout headers hdr, inout metadata meta,
         actions = {
             forward;
             to_controller;
-            // flooding;
+            flooding;
         }
         size = 1024;
         default_action = to_controller;
